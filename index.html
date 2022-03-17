@@ -1,56 +1,150 @@
-.signup-container
-  .left-container
-    %h1 
-      %i.fas.fa-paw
-      PUPASSURE
-    .puppy
-      %img{ :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-542207-jpeg.png"}
-  .right-container
-    %header
-      %h1 Yay, puppies! Ensure your pup gets the best care! 
-      .set
-        .pets-name
-          %label{ :for => "pets-name"} Name
-          %input#pets-name{ :type => "text", :placeholder => "Pet's name" }
-        .pets-photo
-          %button#pets-upload{}
-            %i.fas.fa-camera-retro
-          %label{ :for => "pets-upload"} Upload a photo
-      .set
-        .pets-breed
-          %label{ :for => "pets-breed"} Breed
-          %input#pets-breed{ :type => "text", :placeholder => "Pet's breed" }
-        .pets-birthday
-          %label{ :for => "pets-birthday"} Birthday
-          %input#pets-birthday{ :type => "text", :placeholder => "MM/DD/YYYY" }
-      .set
-        .pets-gender
-          %label{:for => "pet-gender-female"} Gender
-          .radio-container
-            %input#pet-gender-female{ :name => "pet-gender", :type => "radio", :value => "female", :checked => "" }
-            %label{ :for => "pet-gender-female"} Female
-            %input#pet-gender-male{ :name => "pet-gender", :type => "radio", :value => "male" }
-            %label{ :for => "pet-gender-male"} Male
-        .pets-spayed-neutered
-          %label{:for => "pet-spayed"} Spayed or Neutered
-          .radio-container
-            %input#pet-spayed{ :name => "spayed-neutered", :type => "radio", :value => "spayed", :checked => "" }
-            %label{ :for => "pet-spayed"} Spayed
-            %input#pet-neutered{ :name => "spayed-neutered", :type => "radio", :value => "neutered" }
-            %label{ :for => "pet-neutered"} Neutered
-      .pets-weight
-        %label{:for => "pet-weight-0-25"} Weight
-        .radio-container
-          %input#pet-weight-0-25{ :name => "pet-weight", :type => "radio", :value => "0-25", :checked => "" }
-          %label{ :for => "pet-weight-0-25"} 0-25 lbs
-          %input#pet-weight-25-50{ :name => "pet-weight", :type => "radio", :value => "25-50" }
-          %label{ :for => "pet-weight-25-50"} 25-50 lbs
-          %input#pet-weight-50-100{ :name => "pet-weight", :type => "radio", :value => "50-100" }
-          %label{ :for => "pet-weight-50-100"} 50-100 lbs
-          %input#pet-weight-100-plus{ :name => "pet-weight", :type => "radio", :value => "100+" }
-          %label{ :for => "pet-weight-100-plus"} 100+ lbs
-    %footer
-      .set
-        %button#back Back
-        %button#next Next
-     
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <body>
+    <div class="signupSection">
+    <div class="info">
+      <h1>We make it</h1>
+      <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+      <h1> easy to Happen ! </h1>
+    </div>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="signupForm" name="signupform">
+  <ul class="noBullet">
+        <li>
+          <label for="username"></label>
+          <input  class="inputFields" type=hidden name="oid" value="00D8d000003SNMm" class="inputFields">
+          </li>
+        <li>
+          <input class="inputFields" type=hidden name="retURL" value="https://cms.jotform.com/uploads/answers/answer/mswansson/1723015_Thankyou%20screen.JPG">
+          </li>
+        <li>
+  
+  
+  
+  <input placeholder="First Name" class="inputFields" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br></li>
+        <li>
+  
+  <input placeholder="Last Name" class="inputFields"  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br></li>
+        <li>
+  
+  <input placeholder="Email" class="inputFields"  id="email" maxlength="80" name="email" size="20" type="text" /><br></li>
+        <li>
+  
+  <input placeholder="Company" class="inputFields"  id="company" maxlength="40" name="company" size="20" type="text" /><br></li>
+        <li>
+  
+  <input placeholder="City" class="inputFields"  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+  </li>
+        <li>
+  
+  <input placeholder="Phone" class="inputFields" id="phone" maxlength="40" name="phone" size="20" type="text" /><br></li>
+        <li>
+  
+  <label for="salutation">Salutation</label><select id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
+  <option value="Ms.">Ms.</option>
+  <option value="Mrs.">Mrs.</option>
+  <option value="Dr.">Dr.</option>
+  <option value="Prof.">Prof.</option>
+  </select><br>
+  </li>
+        <li id="center-btn">
+  <input type="submit" name="submit" id="join-btn" alt="Join" value="Submit">
+  </li>
+    </ul>    
+  </form>
+  
+  </body>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #111;
+    background-repeat: no-repeat;
+  }
+  
+  .signupSection {
+    background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .info {
+    width: 45%;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 30px 0;
+    border-right: 5px solid rgba(30, 30, 30, 0.8);
+  }
+  .info h2 {
+    padding-top: 30px;
+    font-weight: 300;
+  }
+  .info p {
+    font-size: 18px;
+  }
+  .info .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: #0ab4b4;
+  }
+  
+  .signupForm {
+    width: 70%;
+    padding: 30px 0;
+    background: rgba(20, 40, 40, 0.8);
+    transition: .2s;
+  }
+  .signupForm h2 {
+    font-weight: 300;
+  }
+  
+  .inputFields {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #0ab4b4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, 0.2);
+    color: white;
+    outline: none;
+  }
+  
+  .noBullet {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #join-btn {
+    border: 1px solid #0ab4b4;
+    background: rgba(20, 20, 20, 0.6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+  }
+  #join-btn:hover {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px 80px;
+  }
+  
+  </style>
