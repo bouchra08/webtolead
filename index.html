@@ -9,48 +9,74 @@
       <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
       <h1> easy to Happen ! </h1>
     </div>
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="signupForm" name="signupform">
-  <ul class="noBullet">
-        <li>
-          <label for="username"></label>
-          <input  class="inputFields" type=hidden name="oid" value="00D8d000003SNMm" class="inputFields">
-          </li>
-        <li>
-          <input class="inputFields" type=hidden name="retURL" value="https://cms.jotform.com/uploads/answers/answer/mswansson/1723015_Thankyou%20screen.JPG">
-          </li>
-        <li>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="signupForm" name="signupform">
+
+      <input type=hidden name="oid" value="00D8d000003Tu9y">
+      <input type=hidden name="retURL" value="http://https://www.google.com/">
   
-  
-  
+          
+          <select class="inputFields"  id="salutation" name="salutation">
+            <option value="" disabled selected hidden>Salutation</option>
+            <option value="">--None--</option><option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+            </select></br>
   <input placeholder="First Name" class="inputFields" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br></li>
-        <li>
+      
   
   <input placeholder="Last Name" class="inputFields"  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br></li>
-        <li>
+      
   
   <input placeholder="Email" class="inputFields"  id="email" maxlength="80" name="email" size="20" type="text" /><br></li>
-        <li>
+      
   
   <input placeholder="Company" class="inputFields"  id="company" maxlength="40" name="company" size="20" type="text" /><br></li>
-        <li>
+    
   
   <input placeholder="City" class="inputFields"  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-  </li>
-        <li>
+  
   
   <input placeholder="Phone" class="inputFields" id="phone" maxlength="40" name="phone" size="20" type="text" /><br></li>
-        <li>
+       
   
-  <label for="salutation">Salutation</label><select id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
-  <option value="Ms.">Ms.</option>
-  <option value="Mrs.">Mrs.</option>
-  <option value="Dr.">Dr.</option>
-  <option value="Prof.">Prof.</option>
-  </select><br>
+ 
+  
+  <br>
+  <select class="inputFields"  id="00N8d000009mZYc" name="00N8d000009mZYc" title="Type event"><option value="">--None--</option><option value="Wedding">Wedding</option>
+    <option value="" disabled selected hidden>Type event</option>
+    <option value="Birthday">Birthday</option>
+    <option value="Baby shower">Baby shower</option>
+    <option value="Graduation">Graduation</option>
+    <option value="New born">New born</option>
+    <option value="Gender reveal">Gender reveal</option>
+    <option value="Baptism">Baptism</option>
+    <option value="Anniversary">Anniversary</option>
+    <option value="Engagement">Engagement</option>
+    <option value="Gala">Gala</option>
+    <option value="Expo">Expo</option>
+    <option value="Forum">Forum</option>
+    <option value="Conference">Conference</option>
+    <option value="Team building">Team building</option>
+    </select><br>
+    
+    
+   
+    <br>
+    <select class="inputFields"  id="00N8d000009mZYh" name="00N8d000009mZYh" title="Services"><option value="">--None--</option><option value="Music">Music</option>
+      <option value="" disabled selected hidden> Services</option>
+      <option value="Decoration">Decoration</option>
+    <option value="Buffet">Buffet</option>
+    <option value="Orchestra">Orchestra</option>
+    </select>
+  
+    <input placeholder="Guest number" class="inputFields"   id="00N8d000009mc9s" name="00N8d000009mc9s" size="20" type="text" /><br>
   </li>
-        <li id="center-btn">
+        
   <input type="submit" name="submit" id="join-btn" alt="Join" value="Submit">
-  </li>
+ 
     </ul>    
   </form>
   
@@ -77,7 +103,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
-    height: 450px;
+    height: fit-content;
     text-align: center;
     display: flex;
     color: white;
